@@ -105,6 +105,7 @@ ICD. *NeurIPS 2021*.
 [[paper](https://proceedings.neurips.cc/paper/2021/file/892c91e0a653ba19df81a90f89d99bcd-Paper.pdf)]
 [[openreview](https://openreview.net/forum?id=k7aeAz4Vbb)]
 [[arXiv](http://arxiv.org/abs/2110.12724)]
+<[code](https://github.com/MegEngine/ICD)>
 \- an instance-conditional distillation framework to find desired knowledge.
 
 - Instance-Conditional Knowledge Distillation for Object Detection
