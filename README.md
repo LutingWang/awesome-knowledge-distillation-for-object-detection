@@ -1,11 +1,13 @@
-# Awesome Knowledge Distillation for Object Detection
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+# Awesome Knowledge Distillation for Object Detection [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![lint](https://github.com/LutingWang/awesome-knowledge-distillation-for-object-detection/actions/workflows/lint.yaml/badge.svg)](https://github.com/LutingWang/awesome-knowledge-distillation-for-object-detection/actions/workflows/lint.yaml)
 
 A curated list of **awesome** knowledge distillation papers and codes for object detection.
 
-## Papers
+## Contents
+
+- [Vanilla](#vanilla)
+- [Teacher Free](#teacher-free)
+
+## Vanilla
 
 *NeurIPS 2017*.
 [[paper](https://proceedings.neurips.cc/paper/2017/hash/e1e32e235eee1f970470a3a6658dfdd5-Abstract.html)]
@@ -52,7 +54,6 @@ DeFeat. *CVPR 2021*.
 [[paper](https://ieeexplore.ieee.org/document/9578919/)]
 [[thecvf](http://openaccess.thecvf.com/content/CVPR2021/html/Guo_Distilling_Object_Detectors_via_Decoupled_Features_CVPR_2021_paper.html)]
 [[arXiv](http://arxiv.org/abs/2103.14475)]
-<[code*](https://github.com/huawei-noah/noah-research/tree/master/DeFeat)>
 \- a novel distillation algorithm via decoupled features (DeFeat) for learning a better student detector.
 
 - Distilling Object Detectors via Decoupled Features
@@ -151,7 +152,7 @@ FGD. *CVPR 2022*.
 - Knowledge Distillation for Object Detection via Rank Mimicking and Prediction-Guided Feature Imitation
 - Gang Li and Xiang Li and Yujie Wang and Shanshan Zhang and Yichao Wu and Ding Liang
 
-### Teacher Free
+## Teacher Free
 
 MimicDet. *ECCV 2020*.
 [[paper](https://link.springer.com/10.1007/978-3-030-58568-6_32)]
