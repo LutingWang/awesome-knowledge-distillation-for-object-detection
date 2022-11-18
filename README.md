@@ -1,4 +1,7 @@
-# awesome-knowledge-distillation-for-object-detection
+# Awesome Knowledge Distillation for Object Detection
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 A curated list of **awesome** knowledge distillation papers and codes for object detection.
 
