@@ -24,7 +24,7 @@ Papers and codes are listed.
 
 Mimic. *CVPR 2017*.
 [[CVF](http://openaccess.thecvf.com/content_cvpr_2017/html/Li_Mimicking_Very_Efficient_CVPR_2017_paper.html)]
-[[IEEE Xplore](http://ieeexplore.ieee.org/document/8100259/)]
+[[IEEE Xplore](http://ieeexplore.ieee.org/abstract/document/8100259/)]
 \- A fully convolutional feature mimic framework to train very efficient CNN based detectors, which do not need ImageNet pre-training and achieve competitive performance as the large and slow models.
 
 - Mimicking Very Efficient Network for Object Detection
@@ -39,7 +39,7 @@ TADF.
 
 GID. *CVPR 2021*.
 [[CVF](http://openaccess.thecvf.com/content/CVPR2021/html/Dai_General_Instance_Distillation_for_Object_Detection_CVPR_2021_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/9577671/)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9577671/)]
 [[arXiv](http://arxiv.org/abs/2103.02340)]
 \- A novel distillation method for detection tasks based on discriminative instances without considering the positive or negative distinguished by GT.
 
@@ -95,7 +95,7 @@ ICD. *NeurIPS 2021*.
 
 LD. *CVPR 2022*.
 [[CVF](https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Localization_Distillation_for_Dense_Object_Detection_CVPR_2022_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/9878414/)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9878414/)]
 [[arXiv](http://arxiv.org/abs/2102.12252)]
 <[GitHub](https://github.com/HikariTJU/LD)>
 <[MMDet](https://github.com/open-mmlab/mmdetection/tree/master/configs/ld)>
@@ -116,7 +116,7 @@ LAD. *WACV 2022*.
 
 FGD. *CVPR 2022*.
 [[CVF](https://openaccess.thecvf.com/content/CVPR2022/html/Yang_Focal_and_Global_Knowledge_Distillation_for_Detectors_CVPR_2022_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/9879869/)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9879869/)]
 [[arXiv](http://arxiv.org/abs/2111.11837)]
 <[GitHub](https://github.com/yzd-v/FGD)>
 \- Focal distillation separates the fore-ground and background, while global distillation rebuilds the relation between different pixels and transfers it from teachers to students.
@@ -163,7 +163,7 @@ SSIM. *NeurIPS 2022*.
 
 FGFI. *CVPR 2019*.
 [[CVF](http://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Distilling_Object_Detectors_With_Fine-Grained_Feature_Imitation_CVPR_2019_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/8953432/)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/8953432/)]
 [[arXiv](http://arxiv.org/abs/1906.03609)]
 <[GitHub](https://github.com/twangnh/Distilling-Object-Detectors)>
 \- A fine-grained feature imitation method exploiting the cross-location discrepancy of feature response.
@@ -173,7 +173,7 @@ FGFI. *CVPR 2019*.
 
 DeFeat. *CVPR 2021*.
 [[CVF](http://openaccess.thecvf.com/content/CVPR2021/html/Guo_Distilling_Object_Detectors_via_Decoupled_Features_CVPR_2021_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/9578919/)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9578919/)]
 [[arXiv](http://arxiv.org/abs/2103.14475)]
 \- A novel distillation algorithm via decoupled features for learning a better student detector.
 
