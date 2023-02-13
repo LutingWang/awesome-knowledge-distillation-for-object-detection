@@ -9,6 +9,8 @@ Papers and codes are listed.
 ## Contents
 
 - [Vanilla](#vanilla)
+- [Foreground Background](#foreground-background)
+- [Heterogeneous](#heterogeneous)
 - [Teacher Free](#teacher-free)
 
 ## Vanilla
@@ -28,16 +30,6 @@ Mimic. *CVPR 2017*.
 - Mimicking Very Efficient Network for Object Detection
 - Quanquan Li and Shengying Jin and Junjie Yan
 
-FGFI. *CVPR 2019*.
-[[CVF](http://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Distilling_Object_Detectors_With_Fine-Grained_Feature_Imitation_CVPR_2019_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/8953432/)]
-[[arXiv](http://arxiv.org/abs/1906.03609)]
-<[GitHub](https://github.com/twangnh/Distilling-Object-Detectors)>
-\- A fine-grained feature imitation method exploiting the cross-location discrepancy of feature response.
-
-- Distilling Object Detectors With Fine-Grained Feature Imitation
-- Tao Wang and Li Yuan and Xiaopeng Zhang and Jiashi Feng
-
 TADF.
 [[arXiv](http://arxiv.org/abs/2006.13108)]
 \- A general distillation framework that adaptively transfers knowledge from teacher to student  according to the task specific prior.
@@ -53,24 +45,6 @@ GID. *CVPR 2021*.
 
 - General Instance Distillation for Object Detection
 - Xing Dai and Zeren Jiang and Zhao Wu and Yiping Bao and Zhicheng Wang and Si Liu and Erjin Zhou
-
-DeFeat. *CVPR 2021*.
-[[CVF](http://openaccess.thecvf.com/content/CVPR2021/html/Guo_Distilling_Object_Detectors_via_Decoupled_Features_CVPR_2021_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/document/9578919/)]
-[[arXiv](http://arxiv.org/abs/2103.14475)]
-\- A novel distillation algorithm via decoupled features for learning a better student detector.
-
-- Distilling Object Detectors via Decoupled Features
-- Jianyuan Guo and Kai Han and Yunhe Wang and Han Wu and Xinghao Chen and Chunjing Xu and Chang Xu
-
-G-DetKD. *ICCV 2021*.
-[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Yao_G-DetKD_Towards_General_Distillation_Framework_for_Object_Detectors_via_Contrastive_ICCV_2021_paper.html)]
-[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9711293/)]
-[[arXiv](http://arxiv.org/abs/2108.07482)]
-\- A novel semantic-guided feature imitation technique, which automatically performs soft matching between feature pairs across all pyramid levels to provide the optimal guidance to the student.
-
-- G-DetKD: Towards General Distillation Framework for Object Detectors via Contrastive and Semantic-guided Feature Imitation
-- Lewei Yao and Renjie Pi and Hang Xu and Wei Zhang and Zhenguo Li and Tong Zhang
 
 FKD. *ICLR 2021*.
 [[OpenReview](https://openreview.net/forum?id=uKhGRvM8QNH)]
@@ -158,7 +132,7 @@ FGD. *CVPR 2022*.
 - Knowledge Distillation for Object Detection via Rank Mimicking and Prediction-Guided Feature Imitation
 - Gang Li and Xiang Li and Yujie Wang and Shanshan Zhang and Yichao Wu and Ding Liang
 
-GLAMD. *ECCV 2022*
+GLAMD. *ECCV 2022*.
 [[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700456.pdf)]
 [[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20080-9_27)]
 \- Divide the feature maps into several patches and apply an attention mechanism for both the entire feature area and each patch.
@@ -166,7 +140,7 @@ GLAMD. *ECCV 2022*
 - GLAMD: Global and Local Attention Mask Distillation for Object Detectors
 - Younho Jang and Wheemyung Shin and Jinbeom Kim and Simon Woo and Sung-Ho Bae
 
-PGD. *ECCV 2022*
+PGD. *ECCV 2022*.
 [[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690123.pdf)]
 [[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20077-9_8)]
 [[arXiv](http://arxiv.org/abs/2203.05469)]
@@ -176,7 +150,48 @@ PGD. *ECCV 2022*
 - Prediction-Guided Distillation for Dense Object Detection
 - Chenhongyi Yang and Mateusz Ochal and Amos Storkey and Elliot J Crowley
 
-HEAD. *ECCV 2022*
+SSIM. *NeurIPS 2022*.
+[[OpenReview](https://openreview.net/forum?id=O3My0RK9s_R)]
+[[arXiv](https://arxiv.org/abs/2211.13133v1)]
+<[GitHub](https://github.com/kornia/kornia)>
+\- By taking into account additional contrast and structural cues, feature importance, correlation, and spatial dependence in the feature space are considered in the loss formulation.
+
+- Structural Knowledge Distillation for Object Detection
+- Philip De Rijk and Lukas Schneider and Marius Cordts and Dariu M Gavrila
+
+## Foreground Background
+
+FGFI. *CVPR 2019*.
+[[CVF](http://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Distilling_Object_Detectors_With_Fine-Grained_Feature_Imitation_CVPR_2019_paper.html)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/document/8953432/)]
+[[arXiv](http://arxiv.org/abs/1906.03609)]
+<[GitHub](https://github.com/twangnh/Distilling-Object-Detectors)>
+\- A fine-grained feature imitation method exploiting the cross-location discrepancy of feature response.
+
+- Distilling Object Detectors With Fine-Grained Feature Imitation
+- Tao Wang and Li Yuan and Xiaopeng Zhang and Jiashi Feng
+
+DeFeat. *CVPR 2021*.
+[[CVF](http://openaccess.thecvf.com/content/CVPR2021/html/Guo_Distilling_Object_Detectors_via_Decoupled_Features_CVPR_2021_paper.html)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/document/9578919/)]
+[[arXiv](http://arxiv.org/abs/2103.14475)]
+\- A novel distillation algorithm via decoupled features for learning a better student detector.
+
+- Distilling Object Detectors via Decoupled Features
+- Jianyuan Guo and Kai Han and Yunhe Wang and Han Wu and Xinghao Chen and Chunjing Xu and Chang Xu
+
+## Heterogeneous
+
+G-DetKD. *ICCV 2021*.
+[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Yao_G-DetKD_Towards_General_Distillation_Framework_for_Object_Detectors_via_Contrastive_ICCV_2021_paper.html)]
+[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9711293/)]
+[[arXiv](http://arxiv.org/abs/2108.07482)]
+\- A novel semantic-guided feature imitation technique, which automatically performs soft matching between feature pairs across all pyramid levels to provide the optimal guidance to the student.
+
+- G-DetKD: Towards General Distillation Framework for Object Detectors via Contrastive and Semantic-guided Feature Imitation
+- Lewei Yao and Renjie Pi and Hang Xu and Wei Zhang and Zhenguo Li and Tong Zhang
+
+HEAD. *ECCV 2022*.
 [[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690310.pdf)]
 [[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20077-9_19)]
 [[arXiv](https://arxiv.org/abs/2207.05345)]
@@ -185,6 +200,15 @@ HEAD. *ECCV 2022*
 
 - HEAD: HEtero-Assists Distillation for Heterogeneous Object Detectors
 - Luting Wang and Xiaojie Li and Yue Liao and Zeren Jiang and Jianlong Wu and Fei Wang and Chen Qian and Si Liu
+
+PKD. *NeurIPS 2022*.
+[[OpenReview](https://openreview.net/forum?id=Q9dj3MzY1o7)]
+[[arXiv](https://arxiv.org/abs/2207.02039v2)]
+<[GitHub](https://github.com/open-mmlab/mmrazor)>
+\- Imitate features with Pearson Correlation Coefficient to focus on the relational information from the teacher and relax constraints on the magnitude of the features.
+
+- PKD: General Distillation Framework for Object Detectors via Pearson Correlation Coefficient
+- Weihan Cao and Yifan Zhang and Jianfei Gao and Anda Cheng and Ke Cheng and Jian Cheng
 
 ## Teacher Free
 
