@@ -78,7 +78,7 @@ CD. *ICCV 2021*.
 - Changyong Shu and Yifan Liu and Jianfei Gao and Zheng Yan and Chunhua Shen
 
 FRS. *NeurIPS 2021*.
-\[[NeurIPS](https://proceedings.neurips.cc/paper/2021/file/29c0c0ee223856f336d7ea8052057753-Paper.pdf)\]
+\[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/29c0c0ee223856f336d7ea8052057753-Abstract.html)\]
 \[[OpenReview](https://openreview.net/forum?id=_bOfK2k_7R)\]
 \[[arXiv](http://arxiv.org/abs/2111.00674)\]
 \- A novel Feature-Richness Score (FRS) method to choose important features that improve generalized detectability during distilling.
@@ -87,7 +87,7 @@ FRS. *NeurIPS 2021*.
 - Zhixing Du and Rui Zhang and Ming Chang and Xishan Zhang and Shaoli Liu and Tianshi Chen and Yunji Chen
 
 ICD. *NeurIPS 2021*.
-\[[NeurIPS](https://proceedings.neurips.cc/paper/2021/file/892c91e0a653ba19df81a90f89d99bcd-Paper.pdf)\]
+\[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/892c91e0a653ba19df81a90f89d99bcd-Abstract.html)\]
 \[[OpenReview](https://openreview.net/forum?id=k7aeAz4Vbb)\]
 \[[arXiv](http://arxiv.org/abs/2110.12724)\]
 <[GitHub](https://github.com/MegEngine/ICD)>
