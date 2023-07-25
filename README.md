@@ -1,6 +1,5 @@
-# Awesome Knowledge Distillation for Object Detection
+# Awesome Knowledge Distillation for Object Detection [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![lint](https://github.com/LutingWang/awesome-knowledge-distillation-for-object-detection/actions/workflows/lint.yaml/badge.svg)](https://github.com/LutingWang/awesome-knowledge-distillation-for-object-detection/actions/workflows/lint.yaml)
 
 A curated list of **awesome** distillation techniques designed for object detectors.
