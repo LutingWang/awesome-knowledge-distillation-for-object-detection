@@ -15,6 +15,7 @@ Papers and codes are listed.
 - [Heterogeneous](#heterogeneous)
 - [Teacher Free](#teacher-free)
 - [Miscellaneous](#miscellaneous)
+- [Newly Published](#newly-published)
 
 ## Vanilla
 
@@ -162,6 +163,13 @@ SSIM. *NeurIPS 2022*.
 - Structural Knowledge Distillation for Object Detection
 - Philip De Rijk and Lukas Schneider and Marius Cordts and Dariu M Gavrila
 
+DRKD. *IJCAI 2023*.
+\[[arXiv](https://arxiv.org/abs/2302.05637)\]
+\- Dual relation knowledge distillation, including pixel-wise relation distillation and instance-wise relation distillation
+
+- Dual Relation Knowledge Distillation for Object Detection
+- Zhenliang Ni and Fukui Yang and Shengzhao Wen and Gang Zhang
+
 ## Foreground Background
 
 FGFI. *CVPR 2019*.
@@ -250,3 +258,13 @@ LGD. *AAAI 2022*.
 
 - When Object Detection Meets Knowledge Distillation: A Survey
 - Zhihui Li and Pengfei Xu and Xiaojun Chang and Luyao Yang and Yuanyuan Zhang and Lina Yao and Xiaojiang Chen
+
+## Newly Published
+
+CrossKD.
+\[[arXiv](https://arxiv.org/abs/2306.11369)\]
+<[GitHub](https://github.com/jbwang1997/CrossKD)>
+\- Delivers the intermediate features of the student's detection head to the teacher's detection head
+
+- CrossKD: Cross-Head Knowledge Distillation for Dense Object Detection
+- Jiabao Wang and Yuming Chen and Zhaohui Zheng and Xiang Li and Ming-Ming Cheng and Qibin Hou

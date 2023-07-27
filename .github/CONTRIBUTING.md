@@ -14,25 +14,26 @@ Before adding a new work to the list, the awesomeness should be discussed in the
 Each work should be formatted as below:
 
 ```md
-Method Name. *Conf Year*.
-[[paper](URL)]
+MethodName. *ConfName YYYY*.
+\[[source](URL)\]
+<[repo](URL)>
 \- Description
 
 - Paper Title
-- Author and Author
+- FirstName LastName and FirstName LastName
 ```
 
 The rendered output should look like:
 
-> Method Name. *Conf Year*.
-> [[paper](URL)]
+> KD. *NeurIPS 2015*.
+> \[[arXiv](http://arxiv.org/abs/1503.02531)\]
 > \- Description
 >
-> - Paper Title
-> - Author and Author
+> - Distilling the Knowledge in a Neural Network
+> - Geoffrey Hinton and Oriol Vinyals and Jeff Dean
 
-If the work does not have a `Method Name`, the field can be omitted.
-A work can have multiple `paper` fields.
+If the work does not have a `MethodName`, the field can be omitted.
+A work can have multiple `source` fields.
 
 ## More Information
 
