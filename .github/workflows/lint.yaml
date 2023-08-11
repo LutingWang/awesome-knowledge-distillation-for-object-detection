@@ -6,37 +6,8 @@ on:
       - main
 
 jobs:
-  awesome-lint:
+  lint:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        files: [README.md]
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - uses: asdf-vm/actions/install@v1
-      - name: Lint
-        run: npx -y awesome-lint ${{ matrix.files }}
-  awesome-bot:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        files: [README.md]
-    steps:
-      - uses: actions/checkout@v2.0.0
-        with:
-          fetch-depth: 0
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.0.1
-          bundler-cache: true
-      - name: Lint
-        run: |
-          gem install awesome_bot
-          awesome_bot \
-            --allow-redirect \
-            --white-list https://github.com/LutingWang/awesome-knowledge-distillation-for-object-detection,https://ieeexplore.ieee.org/abstract/document \
-            ${{ matrix.files }}
+      - uses: DavidAnson/markdownlint-cli2-action@v11
