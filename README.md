@@ -50,14 +50,6 @@ GID. *CVPR 2021*.
 - General Instance Distillation for Object Detection
 - Xing Dai and Zeren Jiang and Zhao Wu and Yiping Bao and Zhicheng Wang and Si Liu and Erjin Zhou
 
-FKD. *ICLR 2021*.
-\[[OpenReview](https://openreview.net/forum?id=uKhGRvM8QNH)\]
-<[GitHub](https://github.com/ArchipLab-LinfengZhang/Object-Detection-Knowledge-Distillation-ICLR2021)>
-\- Attention-guided distillation and non-local distillation.
-
-- Improve Object Detection with Feature-based Knowledge Distillation: Towards Accurate and Efficient Detectors
-- Chunting Zhou and Graham Neubig and Jiatao Gu
-
 DSIG. *ICCV 2021*.
 \[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Chen_Deep_Structured_Instance_Graph_for_Distilling_Object_Detectors_ICCV_2021_paper.html)\]
 \[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9711100/)\]
@@ -77,15 +69,6 @@ CD. *ICCV 2021*.
 
 - Channel-wise Knowledge Distillation for Dense Prediction
 - Changyong Shu and Yifan Liu and Jianfei Gao and Zheng Yan and Chunhua Shen
-
-FRS. *NeurIPS 2021*.
-\[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/29c0c0ee223856f336d7ea8052057753-Abstract.html)\]
-\[[OpenReview](https://openreview.net/forum?id=_bOfK2k_7R)\]
-\[[arXiv](http://arxiv.org/abs/2111.00674)\]
-\- A novel Feature-Richness Score (FRS) method to choose important features that improve generalized detectability during distilling.
-
-- Distilling Object Detectors with Feature Richness
-- Zhixing Du and Rui Zhang and Ming Chang and Xishan Zhang and Shaoli Liu and Tianshi Chen and Yunji Chen
 
 ICD. *NeurIPS 2021*.
 \[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/892c91e0a653ba19df81a90f89d99bcd-Abstract.html)\]
@@ -118,16 +101,6 @@ LAD. *WACV 2022*.
 - Improving Object Detection by Label Assignment Distillation
 - Chuong H. Nguyen and Thuy C. Nguyen and Tuan N. Tang and Nam L. H. Phan
 
-FGD. *CVPR 2022*.
-\[[CVF](https://openaccess.thecvf.com/content/CVPR2022/html/Yang_Focal_and_Global_Knowledge_Distillation_for_Detectors_CVPR_2022_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9879869/)\]
-\[[arXiv](http://arxiv.org/abs/2111.11837)\]
-<[GitHub](https://github.com/yzd-v/FGD)>
-\- Focal distillation separates the fore-ground and background, while global distillation rebuilds the relation between different pixels and transfers it from teachers to students.
-
-- Focal and Global Knowledge Distillation for Detectors
-- Zhendong Yang and Zhe Li and Xiaohu Jiang and Yuan Gong and Zehuan Yuan and Danpei Zhao and Chun Yuan
-
 *AAAI 2022*.
 \[[AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/20018)\]
 \[[arXiv](http://arxiv.org/abs/2112.04840)\]
@@ -135,24 +108,6 @@ FGD. *CVPR 2022*.
 
 - Knowledge Distillation for Object Detection via Rank Mimicking and Prediction-Guided Feature Imitation
 - Gang Li and Xiang Li and Yujie Wang and Shanshan Zhang and Yichao Wu and Ding Liang
-
-GLAMD. *ECCV 2022*.
-\[[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700456.pdf)\]
-\[[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20080-9_27)\]
-\- Divide the feature maps into several patches and apply an attention mechanism for both the entire feature area and each patch.
-
-- GLAMD: Global and Local Attention Mask Distillation for Object Detectors
-- Younho Jang and Wheemyung Shin and Jinbeom Kim and Simon Woo and Sung-Ho Bae
-
-PGD. *ECCV 2022*.
-\[[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690123.pdf)\]
-\[[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20077-9_8)\]
-\[[arXiv](http://arxiv.org/abs/2203.05469)\]
-<[GitHub](https://github.com/ChenhongyiYang/PGD)>
-\- Distill on the key predictive regions of the teacher.
-
-- Prediction-Guided Distillation for Dense Object Detection
-- Chenhongyi Yang and Mateusz Ochal and Amos Storkey and Elliot J Crowley
 
 SSIM. *NeurIPS 2022*.
 \[[OpenReview](https://openreview.net/forum?id=O3My0RK9s_R)\]
@@ -172,6 +127,8 @@ DRKD. *IJCAI 2023*.
 
 ## Foreground Background
 
+### Ground Truth Guided
+
 FGFI. *CVPR 2019*.
 \[[CVF](http://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Distilling_Object_Detectors_With_Fine-Grained_Feature_Imitation_CVPR_2019_paper.html)\]
 \[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/8953432/)\]
@@ -190,6 +147,70 @@ DeFeat. *CVPR 2021*.
 
 - Distilling Object Detectors via Decoupled Features
 - Jianyuan Guo and Kai Han and Yunhe Wang and Han Wu and Xinghao Chen and Chunjing Xu and Chang Xu
+
+### Prediction Guided
+
+FRS. *NeurIPS 2021*.
+\[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/29c0c0ee223856f336d7ea8052057753-Abstract.html)\]
+\[[OpenReview](https://openreview.net/forum?id=_bOfK2k_7R)\]
+\[[arXiv](http://arxiv.org/abs/2111.00674)\]
+\- A novel Feature-Richness Score (FRS) method to choose important features that improve generalized detectability during distilling.
+
+- Distilling Object Detectors with Feature Richness
+- Zhixing Du and Rui Zhang and Ming Chang and Xishan Zhang and Shaoli Liu and Tianshi Chen and Yunji Chen
+
+PGD. *ECCV 2022*.
+\[[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690123.pdf)\]
+\[[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20077-9_8)\]
+\[[arXiv](http://arxiv.org/abs/2203.05469)\]
+<[GitHub](https://github.com/ChenhongyiYang/PGD)>
+\- Distill on the key predictive regions of the teacher.
+
+- Prediction-Guided Distillation for Dense Object Detection
+- Chenhongyi Yang and Mateusz Ochal and Amos Storkey and Elliot J Crowley
+
+TBD. *PR*.
+\[[ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0031320323000213)\]
+\[[arXiv](https://arxiv.org/abs/2208.03006)\]
+\- Alleviates the misalignment between classification score and localization quality via Harmony Score and Task-Balanced Distillation.
+
+- Task-balanced distillation for object detection
+- Ruining Tang and Zhenyu Liu and Yangguang Li and Yiguo Song and Hui Liu and Qide Wang and Jing Shao and Guifang Duan and Jianrong Tan
+
+### Attention Guided
+
+FKD. *ICLR 2021*.
+\[[OpenReview](https://openreview.net/forum?id=uKhGRvM8QNH)\]
+<[GitHub](https://github.com/ArchipLab-LinfengZhang/Object-Detection-Knowledge-Distillation-ICLR2021)>
+\- Attention-guided distillation and non-local distillation.
+
+- Improve Object Detection with Feature-based Knowledge Distillation: Towards Accurate and Efficient Detectors
+- Chunting Zhou and Graham Neubig and Jiatao Gu
+
+FKD. *TPAMI*.
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10198386/)\]
+\- A structured knowledge distillation scheme, including attention-guided distillation and non-local distillation.
+
+- Structured Knowledge Distillation for Accurate and Efficient Object Detection
+- Linfeng Zhang and Kaisheng Ma
+
+FGD. *CVPR 2022*.
+\[[CVF](https://openaccess.thecvf.com/content/CVPR2022/html/Yang_Focal_and_Global_Knowledge_Distillation_for_Detectors_CVPR_2022_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9879869/)\]
+\[[arXiv](http://arxiv.org/abs/2111.11837)\]
+<[GitHub](https://github.com/yzd-v/FGD)>
+\- Focal distillation separates the fore-ground and background, while global distillation rebuilds the relation between different pixels and transfers it from teachers to students.
+
+- Focal and Global Knowledge Distillation for Detectors
+- Zhendong Yang and Zhe Li and Xiaohu Jiang and Yuan Gong and Zehuan Yuan and Danpei Zhao and Chun Yuan
+
+GLAMD. *ECCV 2022*.
+\[[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700456.pdf)\]
+\[[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20080-9_27)\]
+\- Divide the feature maps into several patches and apply an attention mechanism for both the entire feature area and each patch.
+
+- GLAMD: Global and Local Attention Mask Distillation for Object Detectors
+- Younho Jang and Wheemyung Shin and Jinbeom Kim and Simon Woo and Sung-Ho Bae
 
 ## Heterogeneous
 
@@ -242,6 +263,16 @@ LabelEnc. *ECCV 2020*.
 - LabelEnc: A New Intermediate Supervision Method for Object Detection
 - Miao Hao and Yitao Liu and Xiangyu Zhang and Jian Sun
 
+HEAD. *ECCV 2022*.
+\[[ECVA](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136690310.pdf)\]
+\[[Springer](https://link.springer.com/chapter/10.1007/978-3-031-20077-9_19)\]
+\[[arXiv](https://arxiv.org/abs/2207.05345)\]
+<[GitHub](https://github.com/LutingWang/HEAD)>
+\- HEtero-Assists Distillation leveraging heterogeneous detection heads as assistants to guide the optimization of the student detector.
+
+- HEAD: HEtero-Assists Distillation for Heterogeneous Object Detectors
+- Luting Wang and Xiaojie Li and Yue Liao and Zeren Jiang and Jianlong Wu and Fei Wang and Chen Qian and Si Liu
+
 LGD. *AAAI 2022*.
 \[[AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/20240)\]
 \[[arXiv](http://arxiv.org/abs/2109.11496)\]
@@ -258,6 +289,13 @@ LGD. *AAAI 2022*.
 
 - When Object Detection Meets Knowledge Distillation: A Survey
 - Zhihui Li and Pengfei Xu and Xiaojun Chang and Luyao Yang and Yuanyuan Zhang and Lina Yao and Xiaojiang Chen
+
+ScaleKD. *CVPR 2023*.
+\[[CVF](https://openaccess.thecvf.com/content/CVPR2023/html/Zhu_ScaleKD_Distilling_Scale-Aware_Knowledge_in_Small_Object_Detector_CVPR_2023_paper.html)\]
+\- Consists of a Scale-Decoupled Feature distillation module and a Cross-Scale Assistant.
+
+- ScaleKD: Distilling Scale-Aware Knowledge in Small Object Detector
+- Yichen Zhu and Qiqi Zhou and Ning Liu and Zhiyuan Xu and Zhicai Ou and Xiaofeng Mou and Jian Tang
 
 ## Newly Published
 
