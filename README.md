@@ -10,14 +10,27 @@ Papers and codes are listed.
 
 ## Contents
 
-- [Vanilla](#vanilla)
-- [Foreground Background](#foreground-background)
-- [Heterogeneous](#heterogeneous)
-- [Teacher Free](#teacher-free)
+- [Knowledge Distillation for General Object Detectors](#knowledge-distillation-for-general-object-detectors)
+  - [Feature Distillation](#feature-distillation)
+    - [Foreground Masks](#foreground-masks)
+      - [Ground Truth Guided](#ground-truth-guided)
+      - [Prediction Guided](#prediction-guided)
+      - [Attention Guided](#attention-guided)
+      - [Miscellaneous Foreground Masks](#miscellaneous-foreground-masks)
+    - [Miscellaneous Feature Distillation](#miscellaneous-feature-distillation)
+  - [Instance Distillation](#instance-distillation)
+  - [Label Assignment Distillation](#label-assignment-distillation)
+  - [Balancing between Tasks](#balancing-between-tasks)
+  - [Miscellaneous Knowledge Distillation for General Object Detectors](#miscellaneous-knowledge-distillation-for-general-object-detectors)
+- [Knowledge Distillation for Specific Object Detectors](#knowledge-distillation-for-specific-object-detectors)
+  - [Knowledge Distillation for GFL](#knowledge-distillation-for-gfl)
+  - [Knowledge Distillation for DETR](#knowledge-distillation-for-detr)
+- [Knowledge Distillation for Heterogeneous Object Detectors](#knowledge-distillation-for-heterogeneous-object-detector-pairs)
+- [Teacher Free Knowledge Distillation for Object Detectors](#teacher-free-knowledge-distillation-for-object-detectors)
 - [Miscellaneous](#miscellaneous)
-- [Newly Published](#newly-published)
+- [Newly Published Papers](#newly-published-papers)
 
-## Vanilla
+## Knowledge Distillation for General Object Detectors
 
 *NeurIPS 2017*.
 \[[NeurIPS](https://proceedings.neurips.cc/paper/2017/hash/e1e32e235eee1f970470a3a6658dfdd5-Abstract.html)\]
@@ -34,100 +47,11 @@ Mimic. *CVPR 2017*.
 - Mimicking Very Efficient Network for Object Detection
 - Quanquan Li and Shengying Jin and Junjie Yan
 
-TADF.
-\[[arXiv](http://arxiv.org/abs/2006.13108)\]
-\- A general distillation framework that adaptively transfers knowledge from teacher to student  according to the task specific prior.
+### Feature Distillation
 
-- Distilling Object Detectors with Task Adaptive Regularization
-- Ruoyu Sun and Fuhui Tang and Xiaopeng Zhang and Hongkai Xiong and Qi Tian
+#### Foreground Masks
 
-GID. *CVPR 2021*.
-\[[CVF](http://openaccess.thecvf.com/content/CVPR2021/html/Dai_General_Instance_Distillation_for_Object_Detection_CVPR_2021_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9577671/)\]
-\[[arXiv](http://arxiv.org/abs/2103.02340)\]
-\- A novel distillation method for detection tasks based on discriminative instances without considering the positive or negative distinguished by GT.
-
-- General Instance Distillation for Object Detection
-- Xing Dai and Zeren Jiang and Zhao Wu and Yiping Bao and Zhicheng Wang and Si Liu and Erjin Zhou
-
-DSIG. *ICCV 2021*.
-\[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Chen_Deep_Structured_Instance_Graph_for_Distilling_Object_Detectors_ICCV_2021_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9711100/)\]
-\[[arXiv](http://arxiv.org/abs/2109.12862)\]
-<[GitHub](https://github.com/dvlab-research/Dsig)>
-\- A simple knowledge structure to exploit and encode information inside the detection system to  facilitate detector knowledge distillation.
-
-- Deep Structured Instance Graph for Distilling Object Detectors
-- Yixin Chen and Pengguang Chen and Shu Liu and Liwei Wang and Jiaya Jia
-
-CD. *ICCV 2021*.
-\[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Shu_Channel-Wise_Knowledge_Distillation_for_Dense_Prediction_ICCV_2021_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9710762/)\]
-\[[arXiv](http://arxiv.org/abs/2011.13256)\]
-<[GitHub](https://github.com/irfanICMLL/TorchDistiller/tree/main/SemSeg-distill)>
-\- Normalize the activation map of each channel to obtain a soft probability map.
-
-- Channel-wise Knowledge Distillation for Dense Prediction
-- Changyong Shu and Yifan Liu and Jianfei Gao and Zheng Yan and Chunhua Shen
-
-ICD. *NeurIPS 2021*.
-\[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/892c91e0a653ba19df81a90f89d99bcd-Abstract.html)\]
-\[[OpenReview](https://openreview.net/forum?id=k7aeAz4Vbb)\]
-\[[arXiv](http://arxiv.org/abs/2110.12724)\]
-<[GitHub](https://github.com/MegEngine/ICD)>
-\- An instance-conditional distillation framework to find desired knowledge.
-
-- Instance-Conditional Knowledge Distillation for Object Detection
-- Zijian Kang and Peizhen Zhang and Xiangyu Zhang and Jian Sun and Nanning Zheng
-
-LD. *CVPR 2022*.
-\[[CVF](https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Localization_Distillation_for_Dense_Object_Detection_CVPR_2022_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9878414/)\]
-\[[arXiv](http://arxiv.org/abs/2102.12252)\]
-<[GitHub](https://github.com/HikariTJU/LD)>
-<[MMDet](https://github.com/open-mmlab/mmdetection/tree/master/configs/ld)>
-\- Standard KD by adopting the general localization representation of bounding box.
-
-- Localization Distillation for Dense Object Detection
-- Zhaohui Zheng and Rongguang Ye and Ping Wang and Jun Wang and Dongwei Ren and Wangmeng Zuo
-
-LAD. *WACV 2022*.
-\[[CVF](https://openaccess.thecvf.com/content/WACV2022/html/Nguyen_Improving_Object_Detection_by_Label_Assignment_Distillation_WACV_2022_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9706993/)\]
-\[[arXiv](http://arxiv.org/abs/2108.10520)\]
-<[MMDet](https://github.com/open-mmlab/mmdetection/tree/master/configs/lad)>
-\- Use the teacher network to generate labels for the student, through the hard labels dynamically  assigned by the teacher.
-
-- Improving Object Detection by Label Assignment Distillation
-- Chuong H. Nguyen and Thuy C. Nguyen and Tuan N. Tang and Nam L. H. Phan
-
-*AAAI 2022*.
-\[[AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/20018)\]
-\[[arXiv](http://arxiv.org/abs/2112.04840)\]
-\- RM takes the rank of candidate boxes from teachers as a new form of knowledge to distill. PFI attempts to correlate feature differences with prediction differences.
-
-- Knowledge Distillation for Object Detection via Rank Mimicking and Prediction-Guided Feature Imitation
-- Gang Li and Xiang Li and Yujie Wang and Shanshan Zhang and Yichao Wu and Ding Liang
-
-SSIM. *NeurIPS 2022*.
-\[[OpenReview](https://openreview.net/forum?id=O3My0RK9s_R)\]
-\[[arXiv](https://arxiv.org/abs/2211.13133v1)\]
-<[GitHub](https://github.com/kornia/kornia)>
-\- By taking into account additional contrast and structural cues, feature importance, correlation, and spatial dependence in the feature space are considered in the loss formulation.
-
-- Structural Knowledge Distillation for Object Detection
-- Philip De Rijk and Lukas Schneider and Marius Cordts and Dariu M Gavrila
-
-DRKD. *IJCAI 2023*.
-\[[arXiv](https://arxiv.org/abs/2302.05637)\]
-\- Dual relation knowledge distillation, including pixel-wise relation distillation and instance-wise relation distillation
-
-- Dual Relation Knowledge Distillation for Object Detection
-- Zhenliang Ni and Fukui Yang and Shengzhao Wen and Gang Zhang
-
-## Foreground Background
-
-### Ground Truth Guided
+##### Ground Truth Guided
 
 FGFI. *CVPR 2019*.
 \[[CVF](http://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Distilling_Object_Detectors_With_Fine-Grained_Feature_Imitation_CVPR_2019_paper.html)\]
@@ -148,7 +72,7 @@ DeFeat. *CVPR 2021*.
 - Distilling Object Detectors via Decoupled Features
 - Jianyuan Guo and Kai Han and Yunhe Wang and Han Wu and Xinghao Chen and Chunjing Xu and Chang Xu
 
-### Prediction Guided
+##### Prediction Guided
 
 FRS. *NeurIPS 2021*.
 \[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/29c0c0ee223856f336d7ea8052057753-Abstract.html)\]
@@ -177,7 +101,7 @@ TBD. *PR*.
 - Task-balanced distillation for object detection
 - Ruining Tang and Zhenyu Liu and Yangguang Li and Yiguo Song and Hui Liu and Qide Wang and Jing Shao and Guifang Duan and Jianrong Tan
 
-### Attention Guided
+##### Attention Guided
 
 FKD. *ICLR 2021*.
 \[[OpenReview](https://openreview.net/forum?id=uKhGRvM8QNH)\]
@@ -212,7 +136,155 @@ GLAMD. *ECCV 2022*.
 - GLAMD: Global and Local Attention Mask Distillation for Object Detectors
 - Younho Jang and Wheemyung Shin and Jinbeom Kim and Simon Woo and Sung-Ho Bae
 
-## Heterogeneous
+##### Miscellaneous Foreground Masks
+
+CD. *ICCV 2021*.
+\[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Shu_Channel-Wise_Knowledge_Distillation_for_Dense_Prediction_ICCV_2021_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9710762/)\]
+\[[arXiv](http://arxiv.org/abs/2011.13256)\]
+<[GitHub](https://github.com/irfanICMLL/TorchDistiller/tree/main/SemSeg-distill)>
+\- Normalize the activation map of each channel to obtain a soft probability map.
+
+- Channel-wise Knowledge Distillation for Dense Prediction
+- Changyong Shu and Yifan Liu and Jianfei Gao and Zheng Yan and Chunhua Shen
+
+#### Miscellaneous Feature Distillation
+
+DRKD. *IJCAI 2023*.
+\[[arXiv](https://arxiv.org/abs/2302.05637)\]
+\- Dual relation knowledge distillation, including pixel-wise relation distillation and instance-wise relation distillation
+
+- Dual Relation Knowledge Distillation for Object Detection
+- Zhenliang Ni and Fukui Yang and Shengzhao Wen and Gang Zhang
+
+### Instance Distillation
+
+GID. *CVPR 2021*.
+\[[CVF](http://openaccess.thecvf.com/content/CVPR2021/html/Dai_General_Instance_Distillation_for_Object_Detection_CVPR_2021_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9577671/)\]
+\[[arXiv](http://arxiv.org/abs/2103.02340)\]
+\- A novel distillation method for detection tasks based on discriminative instances without considering the positive or negative distinguished by GT.
+
+- General Instance Distillation for Object Detection
+- Xing Dai and Zeren Jiang and Zhao Wu and Yiping Bao and Zhicheng Wang and Si Liu and Erjin Zhou
+
+DSIG. *ICCV 2021*.
+\[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Chen_Deep_Structured_Instance_Graph_for_Distilling_Object_Detectors_ICCV_2021_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9711100/)\]
+\[[arXiv](http://arxiv.org/abs/2109.12862)\]
+<[GitHub](https://github.com/dvlab-research/Dsig)>
+\- A simple knowledge structure to exploit and encode information inside the detection system to  facilitate detector knowledge distillation.
+
+- Deep Structured Instance Graph for Distilling Object Detectors
+- Yixin Chen and Pengguang Chen and Shu Liu and Liwei Wang and Jiaya Jia
+
+ICD. *NeurIPS 2021*.
+\[[NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2021/hash/892c91e0a653ba19df81a90f89d99bcd-Abstract.html)\]
+\[[OpenReview](https://openreview.net/forum?id=k7aeAz4Vbb)\]
+\[[arXiv](http://arxiv.org/abs/2110.12724)\]
+<[GitHub](https://github.com/MegEngine/ICD)>
+\- An instance-conditional distillation framework to find desired knowledge.
+
+- Instance-Conditional Knowledge Distillation for Object Detection
+- Zijian Kang and Peizhen Zhang and Xiangyu Zhang and Jian Sun and Nanning Zheng
+
+### Label Assignment Distillation
+
+LAD. *WACV 2022*.
+\[[CVF](https://openaccess.thecvf.com/content/WACV2022/html/Nguyen_Improving_Object_Detection_by_Label_Assignment_Distillation_WACV_2022_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9706993/)\]
+\[[arXiv](http://arxiv.org/abs/2108.10520)\]
+<[MMDet](https://github.com/open-mmlab/mmdetection/tree/master/configs/lad)>
+\- Use the teacher network to generate labels for the student, through the hard labels dynamically  assigned by the teacher.
+
+- Improving Object Detection by Label Assignment Distillation
+- Chuong H. Nguyen and Thuy C. Nguyen and Tuan N. Tang and Nam L. H. Phan
+
+### Balancing between Tasks
+
+TADF.
+\[[arXiv](http://arxiv.org/abs/2006.13108)\]
+\- A general distillation framework that adaptively transfers knowledge from teacher to student  according to the task specific prior.
+
+- Distilling Object Detectors with Task Adaptive Regularization
+- Ruoyu Sun and Fuhui Tang and Xiaopeng Zhang and Hongkai Xiong and Qi Tian
+
+BCKD. *ICCV 2023*
+\[[CVF](https://openaccess.thecvf.com/content/ICCV2023/html/Yang_Bridging_Cross-task_Protocol_Inconsistency_for_Distillation_in_Dense_Object_Detection_ICCV_2023_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10377607)\]
+\[[arXiv](http://arxiv.org/abs/2308.14286)\]
+\- A novel distillation method with cross-task consistent protocols, tailored for the dense object detection.
+
+- Bridging Cross-task Protocol Inconsistency for Distillation in Dense Object Detection
+- Longrong Yang and Xianpan Zhou and Xuewei Li and Liang Qiao and Zheyang Li and Ziwei Yang and Gaoang Wang and Xi Li
+
+### Miscellaneous Knowledge Distillation for General Object Detectors
+
+*AAAI 2022*.
+\[[AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/20018)\]
+\[[arXiv](http://arxiv.org/abs/2112.04840)\]
+\- RM takes the rank of candidate boxes from teachers as a new form of knowledge to distill. PFI attempts to correlate feature differences with prediction differences.
+
+- Knowledge Distillation for Object Detection via Rank Mimicking and Prediction-Guided Feature Imitation
+- Gang Li and Xiang Li and Yujie Wang and Shanshan Zhang and Yichao Wu and Ding Liang
+
+*NeurIPS 2022*.
+\[[OpenReview](https://openreview.net/forum?id=O3My0RK9s_R)\]
+\[[arXiv](https://arxiv.org/abs/2211.13133v1)\]
+<[GitHub](https://github.com/kornia/kornia)>
+\- By taking into account additional contrast and structural cues, feature importance, correlation, and spatial dependence in the feature space are considered in the loss formulation.
+
+- Structural Knowledge Distillation for Object Detection
+- Philip De Rijk and Lukas Schneider and Marius Cordts and Dariu M Gavrila
+
+CrossKD.
+\[[arXiv](https://arxiv.org/abs/2306.11369)\]
+<[GitHub](https://github.com/jbwang1997/CrossKD)>
+\- Delivers the intermediate features of the student's detection head to the teacher's detection head
+
+- CrossKD: Cross-Head Knowledge Distillation for Dense Object Detection
+- Jiabao Wang and Yuming Chen and Zhaohui Zheng and Xiang Li and Ming-Ming Cheng and Qibin Hou
+
+## Knowledge Distillation for Specific Object Detectors
+
+### Knowledge Distillation for GFL
+
+LD. *CVPR 2022*.
+\[[CVF](https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Localization_Distillation_for_Dense_Object_Detection_CVPR_2022_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9878414/)\]
+\[[arXiv](http://arxiv.org/abs/2102.12252)\]
+<[GitHub](https://github.com/HikariTJU/LD)>
+<[MMDet](https://github.com/open-mmlab/mmdetection/tree/master/configs/ld)>
+\- Standard KD by adopting the general localization representation of bounding box.
+
+- Localization Distillation for Dense Object Detection
+- Zhaohui Zheng and Rongguang Ye and Ping Wang and Jun Wang and Dongwei Ren and Wangmeng Zuo
+
+### Knowledge Distillation for DETR
+
+DETRDistill. *ICCV 2023*.
+\[[CVF](https://openaccess.thecvf.com/content/ICCV2023/html/Chang_DETRDistill_A_Universal_Knowledge_Distillation_Framework_for_DETR-families_ICCV_2023_paper.html)\]
+\[[arXiv](http://arxiv.org/abs/2211.10156)\]
+\- A novel knowledge distillation dedicated to DETR-families.
+
+- DETRDistill: A Universal Knowledge Distillation Framework for DETR-families
+- Jiahao Chang and Shuo Wang and Guangkai Xu and Zehui Chen and Chenhongyi Yang and Feng Zhao
+
+D^3^ETR.
+\[[arXiv](http://arxiv.org/abs/2211.09768)\]
+\- Distills knowledge in decoder predictions and attention maps from the teachers to students.
+
+- D^3^ETR: Decoder Distillation for Detection Transformer
+- Xiaokang Chen and Jiahui Chen and Yan Liu and Gang Zeng
+
+KD-DETR.
+\[[arXiv](http://arxiv.org/abs/2211.08071)\]
+\- A general knowledge distillation paradigm for DETR with consistent distillation points sampling.
+
+- Knowledge Distillation for Detection Transformer with Consistent Distillation Points Sampling
+- Yu Wang and Xin Li and Shengzhao Wen and Fukui Yang and Wanping Zhang and Gang Zhang and Haocheng Feng and Junyu Han and Errui Ding
+
+## Knowledge Distillation for Heterogeneous Object Detector Pairs
 
 G-DetKD. *ICCV 2021*.
 \[[CVF](http://openaccess.thecvf.com/content/ICCV2021/html/Yao_G-DetKD_Towards_General_Distillation_Framework_for_Object_Detectors_via_Contrastive_ICCV_2021_paper.html)\]
@@ -242,7 +314,7 @@ PKD. *NeurIPS 2022*.
 - PKD: General Distillation Framework for Object Detectors via Pearson Correlation Coefficient
 - Weihan Cao and Yifan Zhang and Jianfei Gao and Anda Cheng and Ke Cheng and Jian Cheng
 
-## Teacher Free
+## Teacher Free Knowledge Distillation for Object Detectors
 
 MimicDet. *ECCV 2020*.
 \[[ECVA](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123590528.pdf)\]
@@ -281,6 +353,15 @@ LGD. *AAAI 2022*.
 - LGD: Label-Guided Self-Distillation for Object Detection
 - Peizhen Zhang and Zijian Kang and Tong Yang and Xiangyu Zhang and Nanning Zheng and Jian Sun
 
+SSD-Det. *ICCV 2023*.
+\[[CVF](https://openaccess.thecvf.com/content/ICCV2023/html/Wu_Spatial_Self-Distillation_for_Object_Detection_with_Inaccurate_Bounding_Boxes_ICCV_2023_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10377611)\]
+\[[arXiv](http://arxiv.org/abs/2307.12101)\]
+\- Mine spatial information to refine the inaccurate box in a self-distillation fashion.
+
+- Spatial Self-Distillation for Object Detection with Inaccurate Bounding Boxes
+- Di Wu and Pengfei Chen and Xuehui Yu and Guorong Li and Zhenjun Han and Jianbin Jiao
+
 ## Miscellaneous
 
 *TPAMI*.
@@ -297,12 +378,4 @@ ScaleKD. *CVPR 2023*.
 - ScaleKD: Distilling Scale-Aware Knowledge in Small Object Detector
 - Yichen Zhu and Qiqi Zhou and Ning Liu and Zhiyuan Xu and Zhicai Ou and Xiaofeng Mou and Jian Tang
 
-## Newly Published
-
-CrossKD.
-\[[arXiv](https://arxiv.org/abs/2306.11369)\]
-<[GitHub](https://github.com/jbwang1997/CrossKD)>
-\- Delivers the intermediate features of the student's detection head to the teacher's detection head
-
-- CrossKD: Cross-Head Knowledge Distillation for Dense Object Detection
-- Jiabao Wang and Yuming Chen and Zhaohui Zheng and Xiang Li and Ming-Ming Cheng and Qibin Hou
+## Newly Published Papers
