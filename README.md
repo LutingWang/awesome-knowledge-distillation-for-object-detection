@@ -213,6 +213,7 @@ BCKD. *ICCV 2023*
 \[[CVF](https://openaccess.thecvf.com/content/ICCV2023/html/Yang_Bridging_Cross-task_Protocol_Inconsistency_for_Distillation_in_Dense_Object_Detection_ICCV_2023_paper.html)\]
 \[[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10377607)\]
 \[[arXiv](http://arxiv.org/abs/2308.14286)\]
+<[GitHub](https://github.com/TinyTigerPan/BCKD)>
 \- A novel distillation method with cross-task consistent protocols, tailored for the dense object detection.
 
 - Bridging Cross-task Protocol Inconsistency for Distillation in Dense Object Detection
@@ -237,13 +238,43 @@ BCKD. *ICCV 2023*
 - Structural Knowledge Distillation for Object Detection
 - Philip De Rijk and Lukas Schneider and Marius Cordts and Dariu M Gavrila
 
-CrossKD.
+CrossKD. CVPR 2024.
+\[[CVF](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_CrossKD_Cross-Head_Knowledge_Distillation_for_Object_Detection_CVPR_2024_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/document/10654891)\]
 \[[arXiv](https://arxiv.org/abs/2306.11369)\]
 <[GitHub](https://github.com/jbwang1997/CrossKD)>
 \- Delivers the intermediate features of the student's detection head to the teacher's detection head
 
 - CrossKD: Cross-Head Knowledge Distillation for Dense Object Detection
 - Jiabao Wang and Yuming Chen and Zhaohui Zheng and Xiang Li and Ming-Ming Cheng and Qibin Hou
+
+KAD. CVPR 2024.
+\[[CVF](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Active_Object_Detection_with_Knowledge_Aggregation_and_Distillation_from_Large_CVPR_2024_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/document/10654949)\]
+\[[arXiv](https://arxiv.org/abs/2405.12509)\]
+<[GitHub](https://github.com/idejie/KAD)>
+\- Proposes a knowledge aggregation and distillation framework that integrates semantic, visual, and spatial prior knowledge to improve localization accuracy of state-changing objects in active object detection.
+
+- Active Object Detection with Knowledge Aggregation and Distillation from Large Models
+- Dejie Yang and Yang Liu
+
+LLOD. ICML 2023.
+\[[ICML](https://icml.cc/virtual/2023/poster/23867)\]
+\[[arXiv](https://arxiv.org/abs/2308.09105)\]
+<[GitHub](https://github.com/Shengcao-Cao/MTPD)>
+\- Proposes a multi-teacher progressive distillation strategy, sequentially distilling knowledge from multiple teachers to bridge model capacity gaps, especially effective for knowledge transfer between heterogeneous architectures.
+
+- Learning Lightweight Object Detectors via Multi-Teacher Progressive Distillation
+- Shengcao Cao and Mengtian Li and James Hays and Deva Ramanan and Yu-Xiong Wang and Liangyan Gui
+
+
+DetKDS. ICML 2024.
+\[[ICML](https://icml.cc/virtual/2024/poster/34018)\]
+<[GitHub](https://github.com/lliai/DetKDS)>
+\- The first distillation search framework for object detection, automatically adapting to homogeneous/heterogeneous teacher-student pairs by searching for optimal distillation strategies to enhance model generalization.
+
+- DetKDS: Knowledge Distillation Search for Object Detectors
+- Lujun Li and Yufan Bao and Peijie Dong and Chuanguang Yang and Anggeng Li and Wenhan Luo and Qifeng Liu and Wei Xue and Yike Guo
 
 ## Knowledge Distillation for Specific Object Detectors
 
@@ -313,6 +344,14 @@ PKD. *NeurIPS 2022*.
 
 - PKD: General Distillation Framework for Object Detectors via Pearson Correlation Coefficient
 - Weihan Cao and Yifan Zhang and Jianfei Gao and Anda Cheng and Ke Cheng and Jian Cheng
+
+UniKD. ICCV 2023.
+\[[CVF](https://openaccess.thecvf.com/content/ICCV2023/html/Lao_UniKD_Universal_Knowledge_Distillation_for_Mimicking_Homogeneous_or_Heterogeneous_Object_ICCV_2023_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/document/10376876)\]
+\- Proposes a universal knowledge distillation framework that extracts detection-relevant knowledge embeddings via Adaptive Knowledge Extractor (AKE), enabling efficient knowledge transfer between homogeneous/heterogeneous detectors.
+
+- UniKD: Universal Knowledge Distillation for Mimicking Homogeneous or Heterogeneous Object Detectors
+- Shanshan Lao and Guanglu Song and Boxiao Liu and Yu Liu and Yujiu Yang
 
 ## Teacher Free Knowledge Distillation for Object Detectors
 
