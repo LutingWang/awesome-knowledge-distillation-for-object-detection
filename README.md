@@ -26,6 +26,7 @@ Papers and codes are listed.
   - [Knowledge Distillation for GFL](#knowledge-distillation-for-gfl)
   - [Knowledge Distillation for DETR](#knowledge-distillation-for-detr)
 - [Knowledge Distillation for Heterogeneous Object Detectors](#knowledge-distillation-for-heterogeneous-object-detector-pairs)
+- [Multi Teacher Knowledge Distillation for Object Detectors](#multi-teacher-knowledge-distillation-for-object-detectors)
 - [Teacher Free Knowledge Distillation for Object Detectors](#teacher-free-knowledge-distillation-for-object-detectors)
 - [Miscellaneous](#miscellaneous)
 - [Newly Published Papers](#newly-published-papers)
@@ -135,6 +136,16 @@ GLAMD. *ECCV 2022*.
 
 - GLAMD: Global and Local Attention Mask Distillation for Object Detectors
 - Younho Jang and Wheemyung Shin and Jinbeom Kim and Simon Woo and Sung-Ho Bae
+
+KAD. CVPR 2024.
+\[[CVF](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Active_Object_Detection_with_Knowledge_Aggregation_and_Distillation_from_Large_CVPR_2024_paper.html)\]
+\[[IEEE Xplore](https://ieeexplore.ieee.org/document/10654949)\]
+\[[arXiv](https://arxiv.org/abs/2405.12509)\]
+<[GitHub](https://github.com/idejie/KAD)>
+\- Proposes a knowledge aggregation and distillation framework that integrates semantic, visual, and spatial prior knowledge to improve localization accuracy of state-changing objects in active object detection.
+
+- Active Object Detection with Knowledge Aggregation and Distillation from Large Models
+- Dejie Yang and Yang Liu
 
 ##### Miscellaneous Foreground Masks
 
@@ -248,34 +259,6 @@ CrossKD. CVPR 2024.
 - CrossKD: Cross-Head Knowledge Distillation for Dense Object Detection
 - Jiabao Wang and Yuming Chen and Zhaohui Zheng and Xiang Li and Ming-Ming Cheng and Qibin Hou
 
-KAD. CVPR 2024.
-\[[CVF](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Active_Object_Detection_with_Knowledge_Aggregation_and_Distillation_from_Large_CVPR_2024_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/document/10654949)\]
-\[[arXiv](https://arxiv.org/abs/2405.12509)\]
-<[GitHub](https://github.com/idejie/KAD)>
-\- Proposes a knowledge aggregation and distillation framework that integrates semantic, visual, and spatial prior knowledge to improve localization accuracy of state-changing objects in active object detection.
-
-- Active Object Detection with Knowledge Aggregation and Distillation from Large Models
-- Dejie Yang and Yang Liu
-
-LLOD. ICML 2023.
-\[[ICML](https://icml.cc/virtual/2023/poster/23867)\]
-\[[arXiv](https://arxiv.org/abs/2308.09105)\]
-<[GitHub](https://github.com/Shengcao-Cao/MTPD)>
-\- Proposes a multi-teacher progressive distillation strategy, sequentially distilling knowledge from multiple teachers to bridge model capacity gaps, especially effective for knowledge transfer between heterogeneous architectures.
-
-- Learning Lightweight Object Detectors via Multi-Teacher Progressive Distillation
-- Shengcao Cao and Mengtian Li and James Hays and Deva Ramanan and Yu-Xiong Wang and Liangyan Gui
-
-
-DetKDS. ICML 2024.
-\[[ICML](https://icml.cc/virtual/2024/poster/34018)\]
-<[GitHub](https://github.com/lliai/DetKDS)>
-\- The first distillation search framework for object detection, automatically adapting to homogeneous/heterogeneous teacher-student pairs by searching for optimal distillation strategies to enhance model generalization.
-
-- DetKDS: Knowledge Distillation Search for Object Detectors
-- Lujun Li and Yufan Bao and Peijie Dong and Chuanguang Yang and Anggeng Li and Wenhan Luo and Qifeng Liu and Wei Xue and Yike Guo
-
 ## Knowledge Distillation for Specific Object Detectors
 
 ### Knowledge Distillation for GFL
@@ -352,6 +335,25 @@ UniKD. ICCV 2023.
 
 - UniKD: Universal Knowledge Distillation for Mimicking Homogeneous or Heterogeneous Object Detectors
 - Shanshan Lao and Guanglu Song and Boxiao Liu and Yu Liu and Yujiu Yang
+
+DetKDS. ICML 2024.
+\[[ICML](https://icml.cc/virtual/2024/poster/34018)\]
+<[GitHub](https://github.com/lliai/DetKDS)>
+\- The first distillation search framework for object detection, automatically adapting to homogeneous/heterogeneous teacher-student pairs by searching for optimal distillation strategies to enhance model generalization.
+
+- DetKDS: Knowledge Distillation Search for Object Detectors
+- Lujun Li and Yufan Bao and Peijie Dong and Chuanguang Yang and Anggeng Li and Wenhan Luo and Qifeng Liu and Wei Xue and Yike Guo
+
+## Multi Teacher Knowledge Distillation for Object Detectors
+
+LLOD. ICML 2023.
+\[[ICML](https://icml.cc/virtual/2023/poster/23867)\]
+\[[arXiv](https://arxiv.org/abs/2308.09105)\]
+<[GitHub](https://github.com/Shengcao-Cao/MTPD)>
+\- Proposes a multi-teacher progressive distillation strategy, sequentially distilling knowledge from multiple teachers to bridge model capacity gaps, especially effective for knowledge transfer between heterogeneous architectures.
+
+- Learning Lightweight Object Detectors via Multi-Teacher Progressive Distillation
+- Shengcao Cao and Mengtian Li and James Hays and Deva Ramanan and Yu-Xiong Wang and Liangyan Gui
 
 ## Teacher Free Knowledge Distillation for Object Detectors
 
