@@ -137,16 +137,6 @@ GLAMD. *ECCV 2022*.
 - GLAMD: Global and Local Attention Mask Distillation for Object Detectors
 - Younho Jang and Wheemyung Shin and Jinbeom Kim and Simon Woo and Sung-Ho Bae
 
-KAD. CVPR 2024.
-\[[CVF](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Active_Object_Detection_with_Knowledge_Aggregation_and_Distillation_from_Large_CVPR_2024_paper.html)\]
-\[[IEEE Xplore](https://ieeexplore.ieee.org/document/10654949)\]
-\[[arXiv](https://arxiv.org/abs/2405.12509)\]
-<[GitHub](https://github.com/idejie/KAD)>
-\- Proposes a knowledge aggregation and distillation framework that integrates semantic, visual, and spatial prior knowledge to improve localization accuracy of state-changing objects in active object detection.
-
-- Active Object Detection with Knowledge Aggregation and Distillation from Large Models
-- Dejie Yang and Yang Liu
-
 ##### Miscellaneous Foreground Masks
 
 CD. *ICCV 2021*.
